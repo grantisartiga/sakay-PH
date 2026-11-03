@@ -1,0 +1,4 @@
+# Block direct downloads of secrets and SQL
+<FilesMatch "^(config\.php|config\.sample\.php|schema\.sql)$">
+    Require all denied
+</FilesMatch>

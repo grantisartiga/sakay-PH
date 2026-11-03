@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SakayPH - Davao City Jeepney Demand</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .app { max-width: 460px; margin: 0 auto; padding-bottom: 32px; }
+        .pick {
+            display: block;
+            text-decoration: none;
+            color: var(--p);
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            box-shadow: 0 3px 6px #0002;
+            padding: 18px;
+            margin-bottom: 14px;
+            transition: transform .12s, border-color .12s;
+        }
+        .pick:hover, .pick:focus-visible { transform: translateY(-2px); border-color: var(--p); outline: none; }
+        .pick .ico { font-size: 30px; line-height: 1; }
+        .pick h3 { margin: 8px 0 4px; font-size: 20px; }
+        .pick p { margin: 0 0 12px; font-size: 13px; color: #6d5a6b; }
+        .pick .btn { display: block; text-align: center; }
+        .foot { font-size: 11px; text-align: center; color: #8a7a88; margin-top: 18px; }
+    </style>
+</head>
+<body>
+<div class="app">
+
+    <div class="brand">
+        <div class="logo-box"><!-- put <img src="logo.png"> here --></div>
+        <div>
+            <h1>SakayPH</h1>
+            <small>Davao City Jeepney Demand</small>
+        </div>
+    </div>
+
+    <div class="kicker">DAVAO CITY - JEEPNEY ROUTES</div>
+    <h2 class="title">Who's using SakayPH?</h2>
+    <p class="sub">Choose how you want to continue.</p>
+
+    <a class="pick" href="commuter.html">
+        <div class="ico">🚌</div>
+        <h3>I'm a commuter</h3>
+        <p>Find which jeepney to ride, the fare, and how busy it is right now. No account needed.</p>
+        <span class="btn">Find a jeepney</span>
+    </a>
+
+    <a class="pick" href="gov.html">
+        <div class="ico">🏛️</div>
+        <h3>I'm a government official</h3>
+        <p>Transport office staff: view route demand, commuter interest and confirmed boardings.</p>
+        <span class="btn ghost">Staff log in</span>
+    </a>
+
+    <p class="foot">The government dashboard is for authorised transport authority staff only.</p>
+</div>
+</body>
+</html>
